@@ -14,36 +14,31 @@ int main()
 
     for (int i = 1; i <= 5; i++)
     {
-        cout << "Enter student name: ";
+        cout << "Enter Student Name: ";
         cin >> name;
 
-        cout << "Enter marks: ";
+        cout << "Enter Marks: ";
         cin >> marks;
 
         total = total + marks;
 
         if (marks > highest)
         {
-            highest = marks;
-        }
+            highest = marks; }
 
         if (i == 1)
         {
-            lowest = marks;
-        }
+            lowest = marks; }
         else if (marks < lowest)
         {
-            lowest = marks;
-        }
+            lowest = marks;}
 
         if (marks >= 40)
         {
-            passed++;
-        }
+            passed++; }
         else
         {
-            failed++;
-        }
+            failed++; }
     }
 
     average = total / 5.0;
